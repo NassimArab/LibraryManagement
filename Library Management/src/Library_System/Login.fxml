@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Library_System.LoginController">
+   <children>
+      <Label alignment="CENTER_RIGHT" layoutX="126.0" layoutY="-1.0" prefHeight="49.0" prefWidth="416.0" style="-fx-text-fill: #e6e6e6; -fx-background-color: #2A2E37;" text="ferhat abbas university setif 1" textAlignment="CENTER">
+         <font>
+            <Font name="Bookman Old Style Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="BackLogin" layoutX="14.0" layoutY="447.0" prefHeight="62.0" prefWidth="68.0" text="Back">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXTabPane layoutX="60.0" layoutY="75.0" prefHeight="367.0" prefWidth="630.0" style="-fx-background-color: #e6e6e6;">
+         <tabs>
+            <Tab text="Student">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #2A2E37;">
+                     <children>
+                        <JFXButton fx:id="ForgotButton" alignment="CENTER" layoutX="204.0" layoutY="252.0" prefHeight="41.0" prefWidth="169.0" text="Forgot password" />
+                        <JFXTextField fx:id="StudentUserLogin" layoutX="204.0" layoutY="50.0" prefHeight="25.0" prefWidth="223.0" promptText="user" />
+                        <JFXPasswordField fx:id="StudentPasswordLogin" layoutX="201.0" layoutY="116.0" prefHeight="25.0" prefWidth="228.0" promptText="password" />
+                        <ImageView fitHeight="51.0" fitWidth="37.0" layoutX="108.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/Library_System/keyicon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="48.0" fitWidth="37.0" layoutX="108.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/Library_System/user-name.png" />
+                           </image>
+                        </ImageView>
+                        <JFXButton fx:id="LoginStudent" alignment="CENTER" layoutX="176.0" layoutY="189.0" prefHeight="50.0" prefWidth="94.0" text="Login">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="16.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="SignupStudent" alignment="CENTER" layoutX="304.0" layoutY="189.0" prefHeight="51.0" prefWidth="93.0" text="Sign Up">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="16.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Librian">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #2A2E37;">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="127.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/Library_System/user-name.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-53.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="127.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/Library_System/keyicon.png" />
+                           </image></ImageView>
+                        <JFXButton fx:id="LoginLibrian" layoutX="206.0" layoutY="236.0" prefHeight="40.0" prefWidth="75.0" text="login" />
+                        <JFXButton fx:id="CancelLibrian" layoutX="369.0" layoutY="236.0" text="cancel" />
+                        <JFXTextField fx:id="LibrianUserLogin" layoutX="206.0" layoutY="58.0" prefHeight="38.0" prefWidth="279.0" promptText="User Name" />
+                        <JFXPasswordField fx:id="LibrianPasswordLogin" layoutX="206.0" layoutY="159.0" prefHeight="38.0" prefWidth="274.0" promptText="Pass Word" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Super Admin">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #2A2E37;">
+                     <children>
+                        <JFXTextField fx:id="SuperAdminUserLogin" layoutX="215.0" layoutY="60.0" prefHeight="38.0" prefWidth="270.0" promptText="User Name" />
+                        <JFXPasswordField fx:id="SuperAdminPasswordLogin" layoutX="215.0" layoutY="159.0" prefHeight="38.0" prefWidth="275.0" promptText="Pass Word" />
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="138.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/Library_System/user-name.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="138.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/Library_System/keyicon.png" />
+                           </image>
+                        </ImageView>
+                        <JFXButton fx:id="SuperAdminLogin" layoutX="226.0" layoutY="237.0" prefHeight="49.0" prefWidth="93.0" text="Login" />
+                        <JFXButton fx:id="CancelSuperAdmin" layoutX="387.0" layoutY="237.0" prefHeight="49.0" prefWidth="93.0" text="Cancel" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+      <Label alignment="CENTER" layoutX="619.0" layoutY="32.0" prefHeight="33.0" prefWidth="93.0" style="-fx-text-fill: #e6e6e6; -fx-background-color: #2A2E37;" text="Login">
+         <font>
+            <Font name="Bookman Old Style Bold" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="75.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/Library_System/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

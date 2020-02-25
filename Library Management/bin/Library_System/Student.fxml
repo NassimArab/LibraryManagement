@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Library_System.StudentController">
+   <children>
+      <TitledPane fx:id="tp" alignment="CENTER" animated="false" collapsible="false" layoutX="47.0" layoutY="47.0" prefHeight="400.0" prefWidth="606.0" style="-fx-background-color: #2A2E37;" text="Student Home">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #2A2E37;">
+               <children>
+                  <JFXButton fx:id="BookList" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="92.0" layoutY="41.0" prefHeight="95.0" prefWidth="100.0" ripplerFill="#e3470e00" text="Book Liste" textFill="#e5475f">
+                     <graphic>
+                        <ImageView fitHeight="71.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                             <Image url="Library_System/liste of book.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="SearchBook" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="405.0" layoutY="46.0" prefHeight="93.0" prefWidth="99.0" ripplerFill="#e3470e00" text="Search Book" textFill="#e5475f">
+                     <graphic>
+                        <ImageView fitHeight="71.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                           <Image url="Library_System/search book.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="BorrowBook" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="92.0" layoutY="195.0" prefHeight="92.0" prefWidth="98.0" ripplerFill="#e3470e00" text="Borrow Book" textFill="#e5475f">
+                     <graphic>
+                        <ImageView fitHeight="71.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="Library_System/borrow book.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="LogOut" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="414.0" layoutY="195.0" prefHeight="90.0" prefWidth="99.0" ripplerFill="#e3470e00" text="Logout" textFill="#e5475f">
+                     <graphic>
+                        <ImageView fitHeight="71.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="Library_System/logout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <Label alignment="CENTER" layoutX="97.0" layoutY="139.0" prefHeight="17.0" prefWidth="90.0" text="list of book">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="410.0" layoutY="139.0" prefHeight="17.0" prefWidth="96.0" text="search book">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="93.0" layoutY="287.0" prefHeight="17.0" prefWidth="103.0" text="borrow book">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="418.0" layoutY="287.0" prefHeight="17.0" prefWidth="95.0" text="logout">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" color="#248888" height="31.13" offsetX="5.0" offsetY="5.0" radius="17.6575" spread="0.2" width="41.5" />
+         </effect>
+      </TitledPane>
+   </children>
+</AnchorPane>

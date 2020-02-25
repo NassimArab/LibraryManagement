@@ -1,0 +1,23 @@
+
+
+Version:	3.8
+CmdLine:	C:\Users\toshiba\Desktop\Library Management\Library.exe --l4j-debug
+WOW64:		yes
+Working dir:	C:\Users\toshiba\Desktop\Library Management\.
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Check launcher:	D:\jdk\bin\javaw.exe (OK)
+Match:		1.8
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_144
+Check launcher:	D:\jdk\bin\javaw.exe (OK)
+Match:		1.8.0_144
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8
+Ignore:		1.8
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8.0_144
+Ignore:		1.8.0_144
+Runtime used:	1.8.0_144 (64-bit)
+Launcher:	D:\jdk\bin\javaw.exe
+Launcher args:	-jar "C:\Users\toshiba\Desktop\Library Management\Library.exe"
+Args length:	62/32768 chars
+Exit code:	0

@@ -1,0 +1,55 @@
+* {
+    -fx-primary : #2A2E37;
+    -fx-secondary : #FFFF8D;
+    -fx-primarytext : #B2B2B2;
+    -fx-blue: #1976D2;
+    -fx-red: #FF0000;
+    -fx-green:#2E7D32;
+}
+
+
+.root
+{
+	-fx-background-color:-fx-primary;
+}
+
+.label
+{
+	-fx-text-fill: #e6e6e6;
+	
+	
+}
+
+.button{
+    -fx-text-fill:  -fx-primarytext;
+    -fx-background-color: -fx-primary;
+    -fx-border-color: -fx-secondary;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-font-size: 13pt;
+}
+
+.tab{
+    -fx-background-color: #2A2E37;
+    -fx-pref-width : 490;
+    -fx-pref-height : 50;
+}
+
+.tab-header-background{
+    -fx-background-color: -fx-primary;
+}
+
+
+.button:hover{
+    -fx-border-color: -fx-secondary;
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+
+.text-field
+{
+    -fx-text-fill: -fx-primarytext;
+    -fx-font-size : 13pt;
+    -jfx-focus-color: -fx-secondary;
+    -fx-text-fill: derive(-fx-primary, 20%);
+}

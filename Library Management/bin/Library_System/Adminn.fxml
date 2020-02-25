@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="717.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Library_System.AdminController">
+   <children>
+      <Label alignment="CENTER" prefHeight="60.0" prefWidth="497.0" text="ferhat abbas university setif 1">
+         <font>
+            <Font name="Bookman Old Style Bold Italic" size="24.0" />
+         </font>
+      </Label>
+     
+      <JFXButton fx:id="ManageStudent" alignment="TOP_CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="86.0" layoutY="156.0" prefHeight="90.0" prefWidth="93.0" text="Manage Student" textFill="#1d7ad7">
+         <graphic>
+            <ImageView fitHeight="80.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@managestudent.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="ManageBook" alignment="TOP_CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="297.0" layoutY="156.0" prefHeight="90.0" prefWidth="104.0" text="Manage Books">
+         <graphic>
+            <ImageView fitHeight="80.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@managebook.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="SearchBook" alignment="TOP_CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="86.0" layoutY="320.0" prefHeight="77.0" prefWidth="96.0" text="Search Book">
+         <graphic>
+            <ImageView fitHeight="80.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@searchh.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="ManageBorrowers" alignment="TOP_CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="508.0" layoutY="156.0" prefHeight="90.0" prefWidth="93.0" text="Manage Borrowers">
+         <graphic>
+            <ImageView fitHeight="80.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@borrow_Book.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <Label alignment="CENTER" layoutX="616.0" layoutY="96.0" prefHeight="33.0" prefWidth="93.0" text="Librian">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="GeneralRapport" alignment="TOP_CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="312.0" layoutY="319.0" prefHeight="90.0" prefWidth="93.0" text="General Rapport">
+         <graphic>
+            <ImageView fitHeight="80.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@generale_report.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="LogOut" alignment="TOP_CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="508.0" layoutY="320.0" prefHeight="94.0" prefWidth="104.0" text="Log Out">
+         <graphic>
+            <ImageView fitHeight="80.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logout.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <Label alignment="CENTER" layoutX="69.0" layoutY="242.0" prefHeight="24.0" prefWidth="140.0" text="manage student" />
+      <Label alignment="CENTER" layoutX="279.0" layoutY="242.0" prefHeight="24.0" prefWidth="140.0" text="manage book" />
+      <Label alignment="CENTER" layoutX="486.0" layoutY="242.0" prefHeight="24.0" prefWidth="140.0" text="borrow book" />
+      <Label alignment="CENTER" layoutX="65.0" layoutY="408.0" prefHeight="24.0" prefWidth="149.0" text="search book" />
+      <Label alignment="CENTER" layoutX="286.0" layoutY="412.0" prefHeight="17.0" prefWidth="149.0" text="generale rapport" />
+      <Label alignment="CENTER" layoutX="486.0" layoutY="408.0" prefHeight="24.0" prefWidth="140.0" text="log out" />
+      <ImageView fitHeight="72.0" fitWidth="79.0" layoutX="626.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@lib2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

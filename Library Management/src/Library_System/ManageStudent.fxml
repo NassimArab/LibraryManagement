@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Library_System.ManageStudentController">
+   <children>
+      <Label alignment="CENTER" layoutX="-4.0" prefHeight="38.0" prefWidth="719.0" text="ferhat abbas university setif 1">
+         <font>
+            <Font name="Bookman Old Style Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <JFXTabPane layoutX="54.0" layoutY="122.0" prefHeight="446.0" prefWidth="590.0">
+         <tabs>
+            <Tab text="Add New Student">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="66.0" layoutY="43.0" prefHeight="25.0" prefWidth="118.0" text="User Id">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Label alignment="CENTER" layoutX="67.0" layoutY="85.0" prefHeight="24.0" prefWidth="116.0" text="Name">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Label alignment="CENTER" layoutX="65.0" layoutY="145.0" prefHeight="28.0" prefWidth="121.0" text="F Name">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Label alignment="CENTER" layoutX="69.0" layoutY="246.0" prefHeight="31.0" prefWidth="122.0" text="Branch">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Label alignment="CENTER" layoutX="68.0" layoutY="293.0" prefHeight="30.0" prefWidth="125.0" text="year">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Label alignment="CENTER" layoutX="70.0" layoutY="197.0" prefHeight="30.0" prefWidth="120.0" text="Date of Bearth">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <JFXTextField fx:id="AddUserId" layoutX="226.0" layoutY="24.0" prefHeight="25.0" prefWidth="211.0" promptText="user id" />
+                        <JFXTextField fx:id="AddName" layoutX="230.0" layoutY="66.0" prefHeight="25.0" prefWidth="204.0" promptText="name" />
+                        <JFXTextField fx:id="AddFamilyName" layoutX="226.0" layoutY="126.0" prefHeight="25.0" prefWidth="213.0" promptText="family name" />
+                        <JFXTextField fx:id="AddBranch" layoutX="228.0" layoutY="227.0" prefHeight="25.0" prefWidth="210.0" promptText="branch" />
+                        <JFXTextField fx:id="AddYear" layoutX="228.0" layoutY="274.0" prefHeight="25.0" prefWidth="211.0" promptText="year" />
+                        <JFXButton fx:id="AddStudentRegister" layoutX="262.0" layoutY="351.0" prefHeight="38.0" prefWidth="140.0" text="Register" />
+                        <JFXDatePicker fx:id="AddDate" defaultColor="#4b5756" layoutX="226.0" layoutY="173.0" prefHeight="38.0" prefWidth="253.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Delete Student">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="194.0" layoutY="88.0" prefHeight="38.0" prefWidth="111.0" text="User Id">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <JFXTextField fx:id="DeleteId" layoutX="134.0" layoutY="156.0" prefHeight="38.0" prefWidth="265.0" />
+                        <JFXButton fx:id="DeletIdConfirm" layoutX="211.0" layoutY="277.0" prefHeight="38.0" prefWidth="105.0" text="confirm" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Student Details">
+              <content>
+                <AnchorPane fx:id="UserDetail" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="200.0" layoutY="14.0" prefHeight="28.0" prefWidth="118.0" text="User Id">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <JFXTextField fx:id="DetailUser" layoutX="187.0" layoutY="61.0" prefHeight="25.0" prefWidth="216.0" promptText="user id" />
+                        <JFXTextField fx:id="NameDetail" layoutX="187.0" layoutY="158.0" prefHeight="25.0" prefWidth="182.0" promptText="name" />
+                        <JFXTextField fx:id="FamilyNameDetail" layoutX="187.0" layoutY="238.0" promptText="first name" />
+                        <JFXTextField fx:id="BranchDetail" layoutX="181.0" layoutY="298.0" />
+                        <JFXTextField fx:id="YearDetail" layoutX="181.0" layoutY="345.0" />
+                        <JFXButton fx:id="GetInfo" layoutX="448.0" layoutY="61.0" text="Get Info" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+      <Label alignment="CENTER" layoutX="54.0" layoutY="58.0" prefHeight="38.0" prefWidth="162.0" text="Manage Student">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <JFXButton fx:id="BackManageStudent" layoutX="632.0" layoutY="568.0" prefHeight="40.0" prefWidth="67.0" text="back" />
+   </children>
+</AnchorPane>

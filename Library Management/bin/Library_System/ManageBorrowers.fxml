@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="565.0" prefWidth="764.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Library_System.ManageBorrowersController">
+   <children>
+      <JFXTabPane layoutX="28.0" layoutY="29.0" prefHeight="459.0" prefWidth="705.0">
+         <tabs>
+            <Tab text="Book Issue">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="TableViewI" layoutX="11.0" layoutY="14.0" prefHeight="344.0" prefWidth="682.0">
+                          <columns>
+                            <TableColumn fx:id="BookIdI" prefWidth="178.0" text="StudentId" />
+                            <TableColumn fx:id="StudentIdI" minWidth="2.0" prefWidth="148.0" text="BookId" />
+                              <TableColumn fx:id="DateP" prefWidth="177.0" text="Date P" />
+                              <TableColumn fx:id="DateB" prefWidth="178.0" text="Date B" />
+                          </columns>
+                        </TableView>
+                        <JFXButton fx:id="rRefrechIssue" layoutX="106.0" layoutY="369.0" text="refrech" />
+                        <JFXButton fx:id="DeleteIssue" layoutX="335.0" layoutY="369.0" prefHeight="25.0" prefWidth="113.0" text="Delete" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Reserved Book">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="TableView" layoutX="14.0" layoutY="6.0" prefHeight="357.0" prefWidth="403.0">
+                          <columns>
+                            <TableColumn fx:id="StudentIdR" prefWidth="194.0" text="Student Id" />
+                            <TableColumn fx:id="BookIdR" prefWidth="208.0" text="Book Id" />
+                          </columns>
+                        </TableView>
+                        <JFXButton fx:id="ConfirmReserve" layoutX="545.0" layoutY="256.0" text="confirm" />
+                        <JFXButton fx:id="refrech" layoutX="550.0" layoutY="107.0" text="refrech" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+      <JFXButton fx:id="Back" layoutX="636.0" layoutY="511.0" text="back" />
+   </children>
+</AnchorPane>

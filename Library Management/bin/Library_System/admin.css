@@ -1,0 +1,90 @@
+* {
+    -fx-primary : #2A2E37;
+    -fx-secondary : #FFFF8D;
+    -fx-primarytext : #B2B2B2;
+    -fx-blue: #1976D2;
+    -fx-red: #FF0000;
+    -fx-green:#2E7D32;
+}
+
+.root
+{
+	-fx-background-color:-fx-primary;
+}
+
+.label
+{
+	-fx-text-fill: #e6e6e6;
+	
+	
+}
+
+.button{
+    -fx-text-fill:  -fx-red;
+    
+    -fx-background-color: -fx-primary;
+    -fx-border-color: -fx-secondary;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-font-size: 12pt;
+}
+
+#managestudent
+{
+	/*-fx-background-image: url("manage_student.png");*/
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: center;
+  -fx-background-size: cover;
+	
+}
+#managebook
+{
+  /*  -fx-background-image: url("bookmanage.jpg");*/
+ /*  -fx-background-image: url("manage_book.png");*/
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: center;
+  -fx-background-size: cover;
+	
+}
+
+#boorowbook
+{
+	/*-fx-background-image: url("boorowbook.jpg");*/
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: center;
+  -fx-background-size: cover;
+}
+#search
+{
+	/*-fx-background-image: url("search.png");*/
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: center;
+  -fx-background-size: cover;
+	
+}
+#general
+{
+	/*-fx-background-image: url("general.jpg");*/
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: center;
+  -fx-background-size: cover;
+}
+#logout
+{
+	/*-fx-background-image: url("deconecte.jpg");*/
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: center;
+  -fx-background-size: cover;
+	
+}
+.button:hover{
+    -fx-border-color: -fx-secondary;
+    -fx-background-color: #248888;
+    -fx-text-fill: -fx-primary;
+}
+
+/* .button {
+  -fx-background-image: url("");
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: center;
+}*/
